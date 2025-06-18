@@ -1,0 +1,6 @@
+{
+    "terminal.integrated.shellIntegration.showCommandGuide": true,
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.showSnippets": false
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <title>Emi're</title>
+</head>
+<header class="cabecera">
+<nav class="barraDeNavegacion">
+<ul class="barraDeNavegacionLista">
+      <li><a href="#">Inicio</a></li>
+    <li><a href="#MisProyectos">Mis proyectos</a></li>
+        <li><a href="pages/Acercademi.html">Sobre mí</a></li>
+            <li><a href="#MiFormacion">Mi formación profesional</a></li>
+                <li><a href="#Contacto">Contacto</a></li>
+</ul>
+</nav>
+</header>
+<body>
+    <div class="cajaContendora-inicio animate__animated animate__fadeInDown">
+    <h1 class="titulo animate__animated animate__fadeInDown">¡Hola!, soy Emir</h1>
+    <p  class="subtitulo animate__animated animate__zoomIn">Desarrollador de software y aplicaciones web</p>   
+    <img src="/img/fotoPortada.png" alt="img_foto_perfil" class=" img_foto_perfil animate__animated animate__fadeIn"/>
+    </div> 
+<div class="espacioBlanco"></div>
+<div id="MiFormacion" class="miFormacion  animate__animated animate__slideInLeft" > 
+  <h1 class="titulo">Mi formación profesional</h1>
+  <p class="textoFormacion" > En el año 2022 mientras terminaba
+  la escuela secundaria realicé a distancia el bootcamp Generación T de la
+  empresa <strong>"Streambe"  </strong>, en el cual aprendí Desarrollo Web Jr además de liderazgo
+    en equipos y buenas prácticas. Desarrollé mi primera aplicación React.JS como proyecto 
+    final, luego cursé a distancia Desarrollo de aplicaciones en CoderHouse, Desarrollo Web con PHP
+    también un curso corto sobre introducción al diseño digital en EducacionIT y actualmente me 
+    encuentro cursando por un lado Licenciatura en Diseño Digital con la Universidad Del Este (UDE) además de 
+    la Tecnicatura Universitaria en Programación de la UTN.
+
+  <br><br>Más adelante planeo seguir estudiando algo relacionado con la programación, probablemente
+  Desarrollo de aplicaciones móviles para Android  aunque no tengo definido exactamente.
+
+  </p>
+
+</div>
+      <div id="MisProyectos" class="cajaContendora-proyectos">
+        <h1 class="titulo">Mis Proyectos</h1>
+        <p class="texto">Estos son proyectos que he desarrollado 
+            tanto de Desarrollo web como de Desarrollo de aplicaciones y Diseño Digital
+        </p>
+<div class="container">
+  <div id="cardContainer" class="ui four stackable cards" style="padding: 1rem;"></div>
+</div>
+      </div>
+      <div class="espacioBlanco"></div>
+    <script src="js/mostrarCards.js"></script>
+
+<div id="modalProyecto" class="modal">
+  <div class="modal-background" onclick="cerrarModal()"></div>
+  <div class="modal-card animate__animated animate__zoomIn">
+    <header class="modal-card-head">
+      <p class="modal-card-title" id="modalTitulo"></p>
+      <button class="delete" aria-label="close" onclick="cerrarModal()"></button>
+    </header>
+<section class="modal-card-body">
+  <div class="columns is-vcentered">
+    <div class="column is-5">
+      <figure class="image is-4by3">
+        <img id="modalImagen" />
+      </figure>
+    </div>
+    <div class="column is-7">
+      <p id="modalDescripcion" class="content"></p>
+    </div>
+  </div>
+</section>
+    <footer class="modal-card-foot">
+      <a id="modalLink" class="button is-info" target="_blank">Ir al proyecto</a>
+      <button class="button" onclick="cerrarModal()">Cerrar</button>
+    </footer>
+  </div>
+</div>
+
+
+</body>
+<footer id="Contacto" class="footer">
+  <div class="footer-contenido">
+    <div class="formulario-contacto">
+      <h1 class="subtitulo">Escribe tu consulta</h1>
+      <form action="#" method="POST" id="miFormularioContacto">
+        <div class="form-grupo">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-grupo">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-grupo">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+        </div>
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+    </div>
+    <div class="info-contacto">
+      <h3>Contacto</h3>
+      <p>Email: emirhalter27@gmail.com</p>
+      <p>Teléfono: +54 2999 477777</p>
+		<p>Dirección: Calle San Dorrego N°87 9888</p>
+		<p>Atención de 8 a 21 hs de lunes a jueves</p>
+    </div>
+  </div>
+  <div class="derechos-reservados">
+    <p>&copy; 2025 Emir. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</html>
